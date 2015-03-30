@@ -16,4 +16,3 @@ $loader = new Twig_Loader_Filesystem($templates_dir_path);
 $twig   = new Twig_Environment($loader);
 
 echo $twig->render($template_file_path, $context_data);
-echo "\n";
