@@ -1,0 +1,1 @@
+php --php-ini ./php.ini render.php "./example" "test.twig" "./example/test.yml"
