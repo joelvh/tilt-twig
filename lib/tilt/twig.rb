@@ -38,7 +38,7 @@ module Tilt
 
     private
       def install_php_dependencies
-        Dir.chdir(gem_root_path){`php php/install.php`}
+        Dir.chdir("#{gem_root_path}/php"){ `php install.php` }
       end
 
       def gem_root_path
@@ -48,4 +48,3 @@ module Tilt
 
   register 'twig', TwigTemplate
 end
-
